@@ -34,9 +34,10 @@ def main(args):
             print(f'{password} was found {count} times........... You should probably change your password ')
         else:
             print(f'{password} was not found. Carry on!')
-    return 0
+    return 'Done!!'
 
 
-main(sys.argv[1:])
+if __name__ == '__main__':
+    sys.exit(main(sys.argv[1:]))
 
 pwned_api_check('123')
